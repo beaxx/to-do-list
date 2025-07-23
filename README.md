@@ -2,10 +2,39 @@
 
 ---
 
+<br>
+
 ## 📝 Sobre o projeto
 
-## Demonstração
+Este projeto consiste em uma lista de tarefas simples baseada em React.js. Essa aplicação foi desenvolvida com o objetivo didático de melhorar o conhecimento em funções básicas de React, como .map, .filter, useEffect( ) e etc.
 
-## Tecnologias utilizadas
+### Funcionalidades
+- [x] Adicionar tarefas
+- [x] Excluir tarefas
+- [x] Marca-las como importante
+- [ ] Filtra-las por importância
+- [x] Salva-las localmente de forma automática
+- [x] Responsividade e design intuitivo
 
-## Créditos
+<br>
+
+> [!NOTE]
+> Mais funcionalidades serão implementadas, está é a primeira versão do projeto. Sugestões são bem-vindas.
+
+<br>
+
+## 👩‍💻 Demonstração
+
+<img src="https://github.com/user-attachments/assets/bd199527-c1b3-4969-b3a1-06737db0b0ed">
+
+- Para acessar o site, basta clicar neste link: https://list-your-to-do.web.app/
+
+## 🔨 Tecnologias utilizadas
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,firebase,github)](https://skillicons.dev)
+
+<br>
+
+
+## 📃 Créditos
+- Ícone utilizado como logo: <a href="https://www.flaticon.com/free-icons/svg"> Graphicmall - Flaticon</a>
