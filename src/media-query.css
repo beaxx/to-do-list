@@ -2,10 +2,29 @@
     .all-tasks {
         flex-direction: column;
     }
+    .title{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .task-content{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .task-footer{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .tasks-title {
         font-size: medium;
         text-align: center;
     }
+
     .message {
         font-size: small;
         text-align: center;
@@ -13,6 +32,7 @@
     .task-list{
        padding: 30px;
        max-width: 70%;
+       max-height: 70vh;
     }
     .task-footer span, .task-footer a{
         font-size: 12px;

@@ -8,6 +8,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [taskValue, setTaskValue] = useState('');
   const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const [filter, setFilter] = useState(false);
   let message;
 
   const deleteTask = (id) => {
@@ -34,7 +35,8 @@ function App() {
   return (
     <div className='App'>
       <div className='title'>
-      <h1> <FaListCheck/> TO DO LIST </h1>
+        <FaListCheck className='icon'/>
+        <h1> TO DO LIST </h1>
       </div>
       <div className='task-content'>
         <div className='task-list'>
@@ -46,6 +48,7 @@ function App() {
                 onChange={(e) => setTaskValue(e.target.value)}
               ></input>
               <button 
+                className='add-task-button'
                 title="Add task"
                 onClick={() => {
                   if (taskValue.trim() === '') return;
@@ -63,7 +66,12 @@ function App() {
               </button>
             </div>
             <div className='task-filter'>
-              <button title="Filter tasks">
+              <button 
+                title="Filter tasks"
+                onClick={() => {
+                  setFilter(!filter);
+                }}
+              >
                 <FaFilter/>
               </button>
             </div>
@@ -73,6 +81,7 @@ function App() {
                 <span className='tasks-title'>Active</span>
                 {message}
                 {tasks
+                  .filter((t) => !filter || t.important)
                   .filter((t) => !t.completed)
                   .map((task) =>(
                     <div className='task-item' key={task.id}>
@@ -126,6 +135,7 @@ function App() {
             <div className='completed-tasks'>
               <span className='tasks-title'>Completed</span>
               {tasks
+                  .filter((t) => !filter || t.important)
                   .filter((t) => t.completed)
                   .map((task) =>(
                     <div className='task-item' key={task.id}>

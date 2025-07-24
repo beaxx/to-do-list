@@ -19,35 +19,37 @@
 
 /* CSS */
 .App {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background-color: var(--yellow);
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   font-family: "Inter", sans-serif;
 }
 
 .title{
   font-family: "Delius", cursive;
-  color: var(--color-text);
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 30%;  
+  flex-direction: row;
+  gap: 10px;
+}
+
+.title h1, .title .icon{
+  font-size: xx-large;
+  color: var(--color-text);
 }
 
 .task-content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  flex: 1;
 }
 
 .task-list{
@@ -58,11 +60,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 100%;
-  overflow-y: scroll;
-  max-height: 100%;
   width: 80%;
-  
+  height: 55vh;
+  max-height: 55vh;
+  overflow-y: auto;
 }
 
 .task-header{
@@ -223,13 +224,12 @@
   opacity: 0.5;
 }
 
-.task-footer{
+.task-footer{ 
+  flex: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 30%;
+  flex-direction: column;
 }
 
 .task-footer span{
