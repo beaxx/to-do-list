@@ -1,0 +1,33 @@
+@media screen and (max-width: 720px) {
+    .all-tasks {
+        flex-direction: column;
+    }
+    .tasks-title {
+        font-size: medium;
+        text-align: center;
+    }
+    .message {
+        font-size: small;
+        text-align: center;
+    }
+    .task-list{
+       padding: 30px;
+       max-width: 70%;
+    }
+    .task-footer span, .task-footer a{
+        font-size: 12px;
+    }
+    .task-filter{
+        width: auto;
+    }
+    .active-tasks, .completed-tasks {
+        align-items: center;
+    }
+    .tasks-title{
+        padding: 0;
+    }
+     .task-filter button, .task-add button, .task-add input {
+        padding: 10px;
+        font-size: small;
+     }
+}

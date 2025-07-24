@@ -1,0 +1,255 @@
+/* Importação */
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Constantes */
+:root{
+  --color-text: #3f2558;
+  --color-primary: #6bc1e4;
+  --purple: #b38ad6;
+  --red: #ff6a45;
+  --green: #90bf6d; 
+  --brown: #596686;
+  --white: #ffffff;
+  --yellow: #fff9badd;
+  --shadow: rgba(87, 18, 129, 0.2);
+
+  --transition: all 0.5s ease-in-out;
+  --transform-scale: scale(1.1);
+}
+
+/* CSS */
+.App {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.title{
+  font-family: "Delius", cursive;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 30%;  
+}
+
+.task-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.task-list{
+  background-color: var(--purple);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 5px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  overflow-y: scroll;
+  max-height: 100%;
+  width: 80%;
+  
+}
+
+.task-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-add{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.task-add input{
+  outline: none;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  border-radius: 12px;
+  color: var(--color-text);
+  padding-left: 10px;
+}
+
+.task-add button{
+  background-color: var(--white);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.task-filter{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task-filter button{
+  background-color: var(--white);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.task-filter button:hover, .task-add button:hover{
+  transform: var(--transform-scale);
+}
+
+.all-tasks{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.task-item{
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+  box-shadow: 0px 0px 10px 5px var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+}
+
+.task-item .task-options{
+  display: flex;
+  gap: 10px;
+}
+
+.task-item .task-options .option{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: large;
+}
+
+.task-item .task-options .option.important{
+  color: var(--red);
+}
+
+.task-item .task-options .option.completed{
+  color: var(--green);
+}
+
+.task-item .task-options .option.trash{
+  color: var(--brown);
+}
+
+.active-tasks, .completed-tasks{
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox span {
+    width: 12px;
+    height: 12px;
+    display: block;
+    border: 1.5px solid var(--purple);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.checkbox input:checked + span {
+    background-color: var(--purple);
+}
+
+.task-title{
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: normal;
+  flex: 1;         
+  min-width: 0;     
+  word-break: break-word; 
+  overflow-wrap: break-word; 
+  white-space: normal; 
+}
+
+.tasks-title{
+  color: var(--yellow);
+  font-size: large;
+  letter-spacing: 2px;
+  font-family: "Delius", cursive;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.task-title.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.task-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+.task-footer span{
+  color: var(--purple);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.task-footer a{
+  color: var(--color-text);
+  font-size: 14px;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.message {
+  color: var(--yellow);
+  font-style: italic;
+  font-size: medium;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-top: 10px;
+}

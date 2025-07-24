@@ -1,0 +1,64 @@
+  /* Constantes */
+  @import url('https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+  :root{
+    --color-text: #3f2558;
+    --color-primary: #6bc1e4;
+    --purple: #b38ad6;
+    --red: #ff6a45;
+    --green: #90bf6d; 
+    --brown: #596686;
+    --white: #fff;
+    --yellow: #fff9badd;
+    --shadow: rgba(87, 18, 129, 0.2);
+
+    --transition: all 0.2s ease-in-out;
+    --transform-scale: scale(1.1);
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+  }
+
+  .title{
+    color: var(--color-text);
+    font-family: "Delius", cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+  }
+
+  .content a{
+    padding: 5px;
+      color: var(--color-text);
+      font-size: large;
+      text-decoration: none;
+      transition: var(--transition);
+  }
+  .content a:hover{
+      color: var(--purple);
+      transform: var(--transform-scale);
+  }
+
+  @media screen and (max-width: 720px) {
+    .content a{
+      font-size: medium;
+    }
+  }
