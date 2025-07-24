@@ -12,7 +12,7 @@ Este projeto consiste em uma lista de tarefas simples baseada em React.js. Essa 
 - [x] Adicionar tarefas
 - [x] Excluir tarefas
 - [x] Marca-las como importante
-- [ ] Filtra-las por importância
+- [x] Filtra-las por importância
 - [x] Salva-las localmente de forma automática
 - [x] Responsividade e design intuitivo
 
