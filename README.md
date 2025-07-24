@@ -27,6 +27,7 @@ Este projeto consiste em uma lista de tarefas simples baseada em React.js. Essa 
 
 <img width="800" src="https://github.com/user-attachments/assets/68a0358f-19e6-4440-87a9-136e41fdc621">
 <br><br>
+
 - Para acessar o site, basta clicar neste link: https://list-your-to-do.web.app/
 
 ## 🔨 Tecnologias utilizadas
