@@ -20,12 +20,12 @@ Este projeto consiste em uma lista de tarefas simples baseada em React.js. Essa 
 
 > [!NOTE]
 > Mais funcionalidades serão implementadas, está é a primeira versão do projeto. Sugestões são bem-vindas.
-
 <br>
 
 ## 👩‍💻 Demonstração
 
 <img src="https://github.com/user-attachments/assets/bd199527-c1b3-4969-b3a1-06737db0b0ed">
+<br><br>
 
 - Para acessar o site, basta clicar neste link: https://list-your-to-do.web.app/
 
